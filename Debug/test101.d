@@ -22,6 +22,11 @@ test101.obj: /home/darkerknight/ti/simplelink_msp432p4_sdk_3_40_01_02/source/ti/
 test101.obj: /home/darkerknight/ti/simplelink_msp432p4_sdk_3_40_01_02/source/ti/drivers/UART.h
 test101.obj: /home/darkerknight/ti/simplelink_msp432p4_sdk_3_40_01_02/source/ti/drivers/PWM.h
 test101.obj: /home/darkerknight/ti/simplelink_msp432p4_sdk_3_40_01_02/source/ti/drivers/Capture.h
+test101.obj: /home/darkerknight/ti/ccs1000/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/include/inttypes.h
+test101.obj: /home/darkerknight/ti/ccs1000/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/include/machine/_inttypes.h
+test101.obj: /home/darkerknight/ti/ccs1000/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/include/stdlib.h
+test101.obj: /home/darkerknight/ti/ccs1000/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/include/stdio.h
+test101.obj: /home/darkerknight/ti/ccs1000/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/include/stdarg.h
 test101.obj: /home/darkerknight/workspace_v10/test101/Debug/syscfg/ti_drivers_config.h
 test101.obj: /home/darkerknight/ti/simplelink_msp432p4_sdk_3_40_01_02/source/ti/devices/DeviceFamily.h
 
@@ -47,5 +52,10 @@ test101.obj: /home/darkerknight/ti/simplelink_msp432p4_sdk_3_40_01_02/source/ti/
 /home/darkerknight/ti/simplelink_msp432p4_sdk_3_40_01_02/source/ti/drivers/UART.h: 
 /home/darkerknight/ti/simplelink_msp432p4_sdk_3_40_01_02/source/ti/drivers/PWM.h: 
 /home/darkerknight/ti/simplelink_msp432p4_sdk_3_40_01_02/source/ti/drivers/Capture.h: 
+/home/darkerknight/ti/ccs1000/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/include/inttypes.h: 
+/home/darkerknight/ti/ccs1000/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/include/machine/_inttypes.h: 
+/home/darkerknight/ti/ccs1000/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/include/stdlib.h: 
+/home/darkerknight/ti/ccs1000/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/include/stdio.h: 
+/home/darkerknight/ti/ccs1000/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/include/stdarg.h: 
 /home/darkerknight/workspace_v10/test101/Debug/syscfg/ti_drivers_config.h: 
 /home/darkerknight/ti/simplelink_msp432p4_sdk_3_40_01_02/source/ti/devices/DeviceFamily.h: 

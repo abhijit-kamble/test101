@@ -43,6 +43,14 @@
 #include <ti/drivers/Capture.h>
 // #include <ti/drivers/Watchdog.h>
 
+#include "inttypes.h"
+#include "stdint.h"
+#include "stdlib.h"
+#include "stdio.h"
+
+
+#define arr_size(x)  sizeof(x)/sizeof(x[0]) // For calculating array size
+
 /* Driver configuration */
 #include "ti_drivers_config.h"
 
@@ -81,7 +89,7 @@ void *mainThread(void *arg0)
     PWM_Params_init(&pwmParams);
     pwmParams.idleLevel = PWM_IDLE_LOW;      // Output low when PWM is not running
     pwmParams.periodUnits = PWM_PERIOD_HZ;   // Period is in Hz
-    pwmParams.periodValue = 3e4;             // 1MHz
+    pwmParams.periodValue = 10e3;             // 1MHz
     pwmParams.dutyUnits = PWM_DUTY_FRACTION; // Duty is in fractional percentage
     pwmParams.dutyValue = 0;                 // 0% initial duty cycle
 
@@ -141,5 +149,22 @@ void *mainThread(void *arg0)
              }
          }
          char_counter = 0;
+         if (line[0] == 'D'){
+             int num = strTonum(line, arr_size(line));
+             dutyValue = (uint32_t) (((uint64_t) PWM_DUTY_FRACTION_MAX * num) / 100);
+             PWM_setDuty(pwm, dutyValue);  // set duty cycle to 37%
+         }
     }
+}
+
+int strTonum(char *input_line, int loop_size)
+{
+  int NUMBER, i;
+  char copy_line[loop_size];
+  for(i = 0; i < (loop_size-1); i++)
+  {
+      copy_line[i] = input_line[i+1];
+  }
+  NUMBER = atoi(copy_line);
+  return NUMBER;
 }
